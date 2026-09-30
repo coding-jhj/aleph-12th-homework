@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>정환주 · AI 보안 지망</title>
+<meta name="description" content="막힌 날에도 다시 자리로 돌아와 끝내 풀어내는, 화학공학에서 AI 보안으로 온 한 사람">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{--bg:#F1EFE8;--ink:#16181A;--sub:#62676A;--line:#16181A;--soft:#C9C6BB;--sig:#D9482B;--paper:#F8F6F0}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:"Pretendard Variable",Pretendard,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:var(--bg);background-image:linear-gradient(rgba(22,24,26,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(22,24,26,.045) 1px,transparent 1px);background-size:28px 28px;color:var(--ink);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}.w{max-width:1120px;margin:0 auto;padding:0 24px}
+.mono{font-family:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:48px;font-size:13px;letter-spacing:.02em}
+nav span{display:flex;gap:22px}nav a{text-decoration:none}nav a:hover{color:var(--sig)}
+@media(max-width:640px){nav .hide{display:none}}
+.hero{padding:56px 0 48px}.hg{display:grid;gap:56px;grid-template-columns:1.55fr 1fr;align-items:end}
+@media(max-width:860px){.hg{grid-template-columns:1fr;gap:32px}}
+.kick{font-size:13px;color:var(--sub);margin:0 0 20px;letter-spacing:.04em}
+h1{font-size:clamp(30px,4.6vw,52px);line-height:1.28;letter-spacing:-.025em;margin:0 0 24px;font-weight:800;word-break:keep-all}
+mark{background:linear-gradient(transparent 62%,rgba(217,72,43,.38) 62%);color:inherit;padding:0 2px}
+.lead{font-size:17px;line-height:1.75;margin:0 0 28px;max-width:600px;color:#33383B;word-break:keep-all}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;border:1px solid var(--ink);background:var(--ink);color:#fff;font-family:inherit;border-radius:0}
+.btn:hover{background:var(--sig);border-color:var(--sig)}.btn.o{background:transparent;color:var(--ink)}.btn.o:hover{color:#fff}
+.ds{margin:0;border:1px solid var(--line);background:var(--paper)}
+.ds h4{margin:0;padding:8px 16px;font-size:12px;letter-spacing:.08em;border-bottom:1px solid var(--line);background:var(--ink);color:#fff;font-weight:600}
+.ds div{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:11px 16px;border-bottom:1px dashed var(--soft);font-size:15px}.ds div:last-child{border:0}
+.ds dt{color:var(--sub);font-size:13px;padding-top:2px}.ds dd{margin:0;font-weight:600}
+section{padding:40px 0;border-top:1px solid var(--line)}
+.hd{display:flex;align-items:baseline;gap:14px;margin:0 0 20px}.hd b{font-size:13px;color:var(--sig)}.hd h2{font-size:26px;margin:0;letter-spacing:-.02em}
+.rows{border-top:1px solid var(--line)}
+.r{display:grid;grid-template-columns:48px 220px 1fr 220px;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+@media(max-width:860px){.r{grid-template-columns:36px 1fr;gap:6px 14px}.r>*:nth-child(n+3){grid-column:2}}
+.r .n{font-size:13px;color:var(--sub);padding-top:4px}.r h3{margin:0;font-size:20px;letter-spacing:-.01em}.r h3 em{display:block;font-style:normal;font-size:12px;font-weight:700;color:var(--sig);margin-top:4px;letter-spacing:.02em}
+.r p{margin:0;font-size:15px;line-height:1.65;color:#33383B;word-break:keep-all}.r .tags{font-size:12.5px;color:var(--sub);line-height:1.7}
+.g2{display:grid;gap:0;grid-template-columns:1.5fr 1fr;border:1px solid var(--line)}
+@media(max-width:860px){.g2{grid-template-columns:1fr}}
+.work{background:var(--ink);color:#fff;padding:28px;display:grid;gap:14px;align-content:start}
+.work .mono{font-size:12px;color:#9FA4A6;letter-spacing:.06em}.work h3{margin:0;font-size:22px;line-height:1.3}
+.work .res{font-size:clamp(40px,5.4vw,58px);font-weight:800;line-height:1;letter-spacing:-.03em;color:#fff}.work .res small{display:block;font-size:14px;color:#B9BDBF;font-weight:500;margin-top:10px;letter-spacing:0;line-height:1.55}
+.work .tags{font-size:12.5px;color:#9FA4A6}.work .btn{background:#fff;color:var(--ink);border-color:#fff;justify-self:start}.work .btn:hover{background:var(--sig);border-color:var(--sig);color:#fff}
+.now{background:var(--paper);padding:28px}.now h3{margin:0 0 14px;font-size:13px;letter-spacing:.06em;color:var(--sub)}
+.now li{list-style:none;padding:12px 0;border-bottom:1px dashed var(--soft);font-size:15px;line-height:1.5}.now li:last-child{border:0}.now ul{margin:0;padding:0}.now li b{display:block}.now li small{color:var(--sub);font-size:13px}
+.k2{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:var(--paper)}
+@media(max-width:760px){.k2{grid-template-columns:1fr}}
+.k{padding:28px}.k+.k{border-left:1px solid var(--line)}@media(max-width:760px){.k+.k{border-left:0;border-top:1px solid var(--line)}}
+.k .lab{font-size:12px;color:var(--sub);letter-spacing:.06em;margin:0 0 10px}
+.big{display:flex;align-items:baseline;gap:14px;font-size:clamp(40px,5.6vw,60px);font-weight:800;line-height:1;letter-spacing:-.03em;flex-wrap:wrap}.big small{font-size:.32em;color:var(--sub);font-weight:600;letter-spacing:0}.big .ar{color:var(--sig)}
+.cmp{margin:18px 0 0;display:grid;gap:8px}.cmp div{display:grid;grid-template-columns:52px 1fr 52px;gap:10px;align-items:center;font-size:12.5px;color:var(--sub)}.cmp i{display:block;height:10px;background:var(--ink)}.cmp .a i{background:var(--sig)}.cmp span:last-child{text-align:right;color:var(--ink);font-weight:700}
+.k .note{margin:14px 0 0;font-size:13.5px;color:var(--sub);line-height:1.6}.src{margin:14px 0 0;font-size:12px;color:var(--sub)}
+.sq{display:grid;grid-template-columns:repeat(15,1fr);gap:5px;margin-top:18px}.sq i{aspect-ratio:1;background:var(--soft)}.sq i.y{background:var(--ink)}.sq i.p{background:repeating-linear-gradient(45deg,var(--ink) 0 2px,var(--soft) 2px 4px)}
+.leg{display:flex;gap:16px;margin-top:12px;font-size:12.5px;color:var(--sub)}
+.ab{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--paper)}@media(max-width:860px){.ab{grid-template-columns:1fr}}
+.ab div{padding:24px}.ab div+div{border-left:1px solid var(--line)}@media(max-width:860px){.ab div+div{border-left:0;border-top:1px solid var(--line)}}
+.ab h3{margin:6px 0 8px;font-size:20px}.ab p{margin:0;font-size:15px;color:#33383B;word-break:keep-all}.ab .mono{font-size:12px;color:var(--sig)}
+.tools{display:flex;justify-content:flex-end;margin:-8px 0 12px}.tools button{font-family:inherit;font-size:13px;background:none;border:1px solid var(--line);padding:6px 12px;cursor:pointer;color:var(--ink)}.tools button:hover{background:var(--ink);color:#fff}
+.e{display:grid;grid-template-columns:140px 72px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--line)}.e:last-child{border-bottom:1px solid var(--line)}
+@media(max-width:760px){.e{grid-template-columns:1fr;gap:6px}}
+.e .dt{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;font-weight:700}
+.e .tg span{display:inline-block;font-size:12px;font-weight:700;border:1px solid var(--ink);padding:1px 9px}.e.low .tg span{background:var(--sig);border-color:var(--sig);color:#fff}
+.e h3{margin:0 0 6px;font-size:21px;line-height:1.4;letter-spacing:-.015em;word-break:keep-all}
+.e p{margin:0;font-size:15.5px;line-height:1.8;color:#3E4346;max-width:700px}
+.closed .e p{display:none}
+footer{border-top:1px solid var(--line);padding:28px 0 56px;font-size:14px}footer .w{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
+/* Visual refinement: calmer surface, clearer type scale, and more breathing room. */
+:root{--bg:#f5f4ef;--ink:#202526;--sub:#626b6d;--line:#d9dcd7;--soft:#dfe2dc;--sig:#bd4b35;--paper:#fffefa}
+body{background-image:none;color:#202526;line-height:1.72;font-size:17px}
+.w{max-width:1080px;padding-inline:28px}
+nav{background:rgba(245,244,239,.96);backdrop-filter:blur(10px);border-color:var(--line)}
+nav .w{height:58px;font-size:13px}nav span{gap:26px}
+.hero{padding:76px 0 64px}.hg{grid-template-columns:minmax(0,1.45fr) minmax(280px,.75fr);gap:72px;align-items:center}
+.kick{font-size:14px;margin-bottom:22px;color:var(--sig);font-weight:700}
+h1{font-size:clamp(36px,5vw,58px);line-height:1.2;letter-spacing:-.045em;margin-bottom:22px;max-width:720px}
+mark{background:linear-gradient(transparent 72%,rgba(189,75,53,.22) 72%);padding:0 1px}
+.lead{font-size:18px;line-height:1.8;max-width:620px;color:#454d4e;margin-bottom:30px}
+.btn{border-radius:4px;min-height:48px;padding-inline:20px}.btn.o{border-color:#aeb4b0}
+.ds{border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 12px 32px rgba(24,32,29,.04)}
+.ds h4{background:#f0f1ec;color:var(--sub);border-color:var(--line);padding:12px 18px;font-size:12px}
+.ds div{padding:12px 18px;border-color:#eceee9;font-size:15px}.ds dt{font-size:14px}.ds a{text-decoration-thickness:1px;text-underline-offset:3px}
+section{padding:64px 0;border-color:var(--line)}
+.hd{gap:12px;margin-bottom:26px}.hd b{font-size:13px}.hd h2{font-size:29px;letter-spacing:-.035em}
+.rows{border-color:var(--line)}
+.r{grid-template-columns:34px minmax(190px,.8fr) minmax(0,1.5fr) minmax(150px,.55fr);gap:18px 22px;padding:25px 0;border-color:var(--line)}
+.r .n{font-size:13px}.r h3{font-size:20px;line-height:1.35}.r h3 em{font-size:13px;margin-top:7px}
+.r p{font-size:16px;line-height:1.75;color:#454d4e}.r .tags{font-size:13px;color:#687170;line-height:1.8}
+.g2{border:1px solid var(--line);border-radius:8px;overflow:hidden;grid-template-columns:minmax(0,1.3fr) minmax(300px,.85fr)}
+.work{padding:34px;background:#202526;gap:18px}.work .mono{font-size:13px}.work h3{font-size:24px;line-height:1.4}.work .res{font-size:clamp(44px,5vw,62px)}
+.work .res small{font-size:15px;max-width:470px}.work .tags{font-size:13px;line-height:1.8}.now{padding:32px}.now h3{font-size:13px}.now li{font-size:16px;padding:14px 0}.now li small{font-size:14px}
+.k2{border:1px solid var(--line);border-radius:8px;overflow:hidden}.k{padding:32px}.k+.k{border-color:var(--line)}
+.k .lab{font-size:14px}.big{font-size:clamp(42px,5vw,60px)}
+.cmp div{grid-template-columns:60px 1fr 58px;font-size:13px}.cmp i{height:9px;border-radius:8px}.cmp .a i{background:var(--sig)}
+.k .note{font-size:15px;line-height:1.75;color:#4f5859}.src{font-size:13px}
+.sq{gap:6px}.sq i{border-radius:2px}.sq i.y{background:#334543}.sq i.p{background:repeating-linear-gradient(45deg,#334543 0 2px,#dfe2dc 2px 4px)}
+.leg{font-size:13px;gap:18px}.ab{border-color:var(--line);border-radius:8px;overflow:hidden}.ab div{padding:28px}.ab div+div{border-color:var(--line)}.ab p{font-size:16px;line-height:1.75;color:#454d4e}
+.tools button{font-size:14px;border-color:#b7bdb8;border-radius:4px;padding:8px 14px}.e{grid-template-columns:150px 74px minmax(0,1fr);gap:22px;padding:24px 0;border-color:var(--line)}
+.e .dt{font-size:14px;color:#4f5859}.e .tg span{font-size:13px;border-color:#b7bdb8;border-radius:3px;padding:2px 10px}.e.low .tg span{background:var(--sig);border-color:var(--sig)}
+.e h3{font-size:22px;line-height:1.45;margin-bottom:8px}.e p{font-size:16px;line-height:1.9;color:#454d4e;max-width:760px}
+footer{border-color:var(--line);padding:32px 0 56px;font-size:14px}footer a{text-underline-offset:3px}
+@media(max-width:1000px){.r{grid-template-columns:30px minmax(180px,.8fr) minmax(0,1.4fr);gap:12px 18px}.r .tags{grid-column:2 / 4;margin-top:-5px}}
+@media(max-width:860px){.hg{grid-template-columns:1fr;gap:36px}.ds{max-width:none}.r{grid-template-columns:32px minmax(0,1fr);gap:8px 16px}.r>*:nth-child(n+3){grid-column:2}.r .tags{grid-column:2;margin-top:0}.g2{grid-template-columns:1fr}}
+@media(max-width:640px){.w{padding-inline:20px}.hero{padding:52px 0 42px}h1{font-size:clamp(34px,9vw,46px)}.lead{font-size:17px}section{padding:48px 0}.hd h2{font-size:26px}.work,.now,.k{padding:24px}.big{gap:9px}.sq{gap:4px}.leg{gap:10px;flex-wrap:wrap}.e{grid-template-columns:1fr;gap:7px}.e .dt{font-size:13px}.e h3{font-size:20px}nav .w{padding-inline:20px}}
+/* Larger, darker supporting text keeps secondary information readable. */
+body{font-size:18px;line-height:1.75}
+nav .w{font-size:15px}
+.kick{font-size:16px}
+.btn{font-size:16px}
+.ds h4{font-size:14px;padding:13px 18px}
+.ds div{font-size:17px;padding:13px 18px}
+.ds dt{font-size:15px;color:#424b4b}
+.hd b{font-size:15px}
+.hd h2{font-size:32px}
+.r{grid-template-columns:34px minmax(190px,.75fr) minmax(280px,1.5fr) minmax(210px,.7fr);gap:18px 20px}
+.r .n{font-size:15px;color:#424b4b}
+.r h3{font-size:22px}
+.r h3 em{font-size:15px}
+.r p{font-size:18px;line-height:1.75}
+.r .tags{display:flex;flex-wrap:wrap;align-content:start;gap:8px;font-family:inherit;font-size:15px;color:#263332;font-weight:700;line-height:1.5}
+.r .tags span{display:inline-flex;align-items:center;min-height:32px;padding:4px 10px;border:1px solid #aab7b1;border-radius:5px;background:#e7ece7;white-space:nowrap}
+.work{background:linear-gradient(135deg,#52796b 0%,#416a5c 100%);border:1px solid #3b6154;border-top:4px solid #c4d2b7;border-radius:0 0 0 0;padding:34px 36px;gap:19px;box-shadow:0 12px 28px rgba(41,75,62,.18);color:#fff}
+.work .mono{font-size:15px;color:#e4eee6}
+.work h3{font-size:26px}
+.work .res{font-size:clamp(48px,4.8vw,60px);color:#fff0c9;text-shadow:0 2px 14px rgba(20,45,35,.16)}
+.work .res small{display:grid;gap:8px;margin-top:14px;font-size:16px;color:#263e33;line-height:1.55;text-shadow:none}
+.work .res small span{display:block;padding:10px 13px;background:#edf3ea;border-left:4px solid #a7beaa;border-radius:3px}
+.work .res small b{color:#244b36}
+.work .tags{display:flex;flex-wrap:wrap;gap:8px;font-family:inherit;font-size:14px;color:#263e33;line-height:1.5}
+.work .tags span{display:inline-flex;align-items:center;padding:6px 10px;background:#edf3ea;border:1px solid #c6d5c7;border-radius:4px;font-weight:700;white-space:nowrap}
+.work>span:first-child{display:inline-flex;width:max-content;padding:5px 10px;border:1px solid rgba(255,255,255,.32);border-radius:4px;background:rgba(255,255,255,.1);letter-spacing:.06em}
+.work .btn{background:#f7f4e9;border-color:#f7f4e9;color:#27483c}
+.work .btn:hover{background:#fff;border-color:#fff;color:#27483c}
+.now h3{font-size:15px;color:#414b49}
+.now li{font-size:18px;line-height:1.65;position:relative;padding-left:42px;counter-increment:now-item}
+.now ul{counter-reset:now-item}
+.now li::before{content:"0" counter(now-item);position:absolute;left:0;top:14px;padding:2px 5px;border-radius:3px;background:#e5ede7;color:#35594a;font-size:13px;font-weight:800;line-height:1.5}
+.now li small{font-size:16px;color:#46504f}
+.k .lab{font-size:16px;color:#414b49}
+.cmp div{font-size:14px;color:#485250}
+.k .note{font-size:16px}.src{font-size:14px;color:#485250}
+.leg{font-size:14px;color:#485250}
+.ab .mono{font-size:14px}
+.ab h3{font-size:22px}.ab p{font-size:17px}
+.tools button{font-size:16px}
+.e .dt{font-size:16px}.e .tg span{font-size:15px}
+.e h3{font-size:24px}.e p{font-size:18px}
+footer{font-size:16px}
+@media(max-width:1000px){.r{grid-template-columns:32px minmax(170px,.75fr) minmax(0,1.25fr);gap:12px 18px}.r .tags{grid-column:2 / 4;margin-top:-4px}}
+@media(max-width:860px){.r{grid-template-columns:32px minmax(0,1fr);gap:8px 16px}.r>*:nth-child(n+3){grid-column:2}.r .tags{grid-column:2;margin-top:0}}
+@media(max-width:640px){body{font-size:17px}.w{padding-inline:20px}.hd h2{font-size:27px}.r p{font-size:17px}.r h3{font-size:21px}.r .tags{font-size:14px}.work{padding:25px 23px}.work h3{font-size:22px}.work .res{font-size:50px}.work .res small{font-size:16px}.now li{font-size:17px}.now li small{font-size:15px}.e h3{font-size:21px}.e p{font-size:17px}}
+</style></head><body>
+<nav><div class="w mono"><b>JHJ / 자기소개 기록서</b><span><a class="hide" href="#made">01 만든 것</a><a class="hide" href="#num">02 숫자</a><a class="hide" href="#log">03 기록</a><a href="mailto:ghkswnwjd@gmail.com">연락</a></span></div></nav>
+
+<header class="hero"><div class="w"><div class="hg">
+<div>
+<p class="kick mono">화학공학 → AI 보안</p>
+<h1>화학공학에서 출발해 <mark>AI 보안을 만드는 개발자</mark></h1>
+<p class="lead">AI·LLM 프로젝트를 직접 만들며 보안 역량을 쌓고 있습니다. AI/LLM 팀장으로 KDT 해커톤 장관상을 받았고, 문서 검토 도우미와 온디바이스 AI 앱을 개발했습니다. 막힌 문제를 끝까지 풀고 배운 내용을 팀과 나눕니다.</p>
+<div class="btns"><a class="btn" href="#made">프로젝트 보기</a><a class="btn o" href="#log">성장 기록 읽기</a><button class="btn o" id="cp" type="button">이메일 복사</button></div>
+</div>
+<dl class="ds mono"><h4>PROFILE</h4>
+<div><dt>이름</dt><dd>정환주</dd></div>
+<div><dt>학력</dt><dd>영남대학교 화학공학과 졸업</dd></div>
+<div><dt>목표</dt><dd>AI 보안 전문가</dd></div>
+<div><dt>수상</dt><dd>KDT 해커톤 장관상 (팀장)</dd></div>
+<div><dt>GitHub</dt><dd><a href="https://github.com/coding-jhj">coding-jhj</a></dd></div>
+<div><dt>연락</dt><dd>ghkswnwjd@gmail.com</dd></div>
+</dl>
+</div></div></header>
+
+<section id="made"><div class="w">
+<div class="hd"><b class="mono">01</b><h2>대표 프로젝트</h2></div>
+<div class="rows">
+<div class="r"><span class="n mono">A</span><h3>Lease-Companion<em>장관상 · AI/LLM 팀장</em></h3><p>처음 계약하는 세입자를 위한 계약서 검토 도우미. 문서 추출, 문서 간 교차 검증, Python 룰 엔진을 결합했습니다.</p><div class="tags"><span>LLM</span><span>문서 추출</span><span>룰 엔진</span></div></div>
+<div class="r"><span class="n mono">B</span><h3>VoiceGuide<em>팀 리드 · Android 개발</em></h3><p>시각장애인을 위한 안드로이드 앱. 기기 안에서 YOLO/TFLite로 장애물을 감지하고 진동과 한국어 음성으로 알려줍니다.</p><div class="tags"><span>온디바이스 AI</span><span>YOLO</span><span>TTS</span></div></div>
+<div class="r"><span class="n mono">C</span><h3>Rainbow Bridge<em>백엔드 · TTS</em></h3><p>GPU 기반 TTS 인프라. 비동기 실행과 평가 파이프라인, Qwen3 TTS와 톤 매핑, 백엔드 흐름을 맡았습니다.</p><div class="tags"><span>GPU 서빙</span><span>Qwen3 TTS</span><span>백엔드</span></div></div>
+</div>
+<div class="g2" style="margin-top:24px">
+<div class="work"><span class="mono">FLAGSHIP · 10번 과제</span><h3>Fixed-Token SFT Data Selection</h3>
+<div class="res">+9.49%p<small><span><b>BBH 개선</b> · 다양성 선택 vs 무작위 선택</span><span><b>IFEval −0.26%p</b> · 유의차 없음</span></small></div>
+<div class="tags" aria-label="실험 설정"><span>Qwen3-1.7B-Base</span><span>4-bit QLoRA</span><span>100만 토큰 고정</span><span>IFEval</span><span>GSM8K</span><span>BBH</span></div>
+<a class="btn" href="https://github.com/coding-jhj/Fixed-Token-SFT-Data-Selection">저장소 보기</a></div>
+<div class="now"><h3 class="mono">NOW · 지금 하는 것</h3><ul>
+<li><b>리눅스마스터 2급 · 네트워크관리사 2급</b><small>2026-09-17 교재 구입, 기출 CBT 풀이 중</small></li>
+<li><b>CTF 문제 풀이</b><small>2026-09-17 첫 풀이, 추석 연휴에도 이어감</small></li>
+<li><b>네트워크·서버 실습</b><small>Cisco Packet Tracer, GNS3, Linux 서버, 웹서버</small></li>
+</ul></div>
+</div>
+</div></section>
+
+<section id="num"><div class="w">
+<div class="hd"><b class="mono">02</b><h2>꾸준함을 보여주는 기록</h2></div>
+<div class="k2">
+<div class="k"><p class="lab mono">아침 호흡 시간 · 분</p><div class="big">0.01<small>09월 10일</small><span class="ar">→</span>5<small>09월 29일</small></div>
+<div class="cmp mono"><div><span>09-10</span><i style="width:2%"></i><span>0.01</span></div><div class="a"><span>09-29</span><i style="width:100%"></i><span>5.00</span></div></div>
+<p class="note">가장 오기 싫었던 날과 지금. 09-18 이후 5분을 채운 날은 4일입니다.</p><p class="src mono">출처: 리추얼 기록</p></div>
+<div class="k"><p class="lab mono">정한 강점 행동을 실천한 날</p><div class="big">22<small>/ 30일</small></div>
+<div class="sq"><i class="y" title="2026-08-11"></i><i class="y" title="2026-08-12"></i><i class="y" title="2026-08-13"></i><i class="n" title="2026-08-14"></i><i class="y" title="2026-08-18"></i><i class="p" title="2026-08-19"></i><i class="n" title="2026-08-20"></i><i class="y" title="2026-08-21"></i><i class="y" title="2026-08-24"></i><i class="n" title="2026-08-25"></i><i class="y" title="2026-08-26"></i><i class="y" title="2026-08-27"></i><i class="y" title="2026-08-28"></i><i class="p" title="2026-08-31"></i><i class="n" title="2026-09-01"></i><i class="n" title="2026-09-07"></i><i class="y" title="2026-09-08"></i><i class="y" title="2026-09-09"></i><i class="y" title="2026-09-10"></i><i class="y" title="2026-09-11"></i><i class="n" title="2026-09-14"></i><i class="y" title="2026-09-15"></i><i class="y" title="2026-09-16"></i><i class="y" title="2026-09-17"></i><i class="y" title="2026-09-18"></i><i class="y" title="2026-09-21"></i><i class="y" title="2026-09-22"></i><i class="y" title="2026-09-23"></i><i class="y" title="2026-09-28"></i><i class="y" title="2026-09-29"></i></div>
+<div class="leg mono"><span>■ 실천 22</span><span>▨ 일부 2</span><span>□ 못 함 6</span></div>
+<p class="src mono">출처: 리추얼 기록 (2026-08-11 ~ 09-29) · 칸 하나가 하루</p></div>
+</div></div></section>
+
+<section><div class="w">
+<div class="hd"><b class="mono">03</b><h2>세 능력, 세 장면</h2></div>
+<div class="ab">
+<div><span class="mono">2026-09-10</span><h3>자기조절력</h3><p>오기 싫은 날 상담을 받고 늦게라도 출석했습니다.</p></div>
+<div><span class="mono">2026-08-26</span><h3>대인관계력</h3><p>배운 내용을 AI로 정리해 팀 단톡방에 공유했습니다.</p></div>
+<div><span class="mono">2026-09-17 · 09-28</span><h3>자기동기력</h3><p>자격증 책을 사고 처음 CTF를 풀었고, 추석 연휴에도 이어갔습니다.</p></div>
+</div></div></section>
+
+<section id="log"><div class="w">
+<div class="hd"><b class="mono">04</b><h2>기록: 넘어졌다가 다시 일어난 5주</h2></div>
+<div class="tools"><button type="button" id="tg" aria-expanded="false" aria-controls="lg">기록 자세히 펼치기</button></div>
+<div id="lg" class="closed"><article class="e "><div class="dt">08-24</div><div class="tg"><span>막힘</span></div><div class="ct"><h3>실습 도중 멘붕, 포기하지 않고 과제를 완성</h3><p>2026년 8월 24일, 실습 도중 멘붕이 왔습니다. 화학공학을 전공한 저에게 IT는 이 과정에서 처음 배우는 분야였습니다. 8월 13일에는 시스코 라우터 실습에서 ping이 나가지 않아 막혔고, 8월 14일에는 실습이 어려워 책을 사야겠다고 적었습니다. 그때마다 저는 같은 순서로 움직였습니다. 옆자리에 묻고, 책을 사서 찾아보고, AI로 정리해 복습했습니다. 다음 날 아침 리추얼에 이렇게 적었습니다. &quot;어제 실습 때 멘붕이 왔지만 포기하지 않고 끝까지 해서 과제를 완성했다.&quot;</p></div></article><article class="e "><div class="dt">08-26 ~ 09-07</div><div class="tg"><span>성과</span></div><div class="ct"><h3>배운 것을 나누고, 첫 해커톤에서 장관상</h3><p>막힌 것을 혼자 쥐고 있지 않으려 했습니다. 8월 26일에는 배운 내용을 AI로 정리해 팀 단톡방에 공유했습니다. 8월 27일 아침에는 &quot;여러 AI를 쓰며 계속 검증을 하겠다&quot;고 적었고, 그날 동료에게 AI를 대하는 마음가짐과 원리를 설명했습니다. 주말에는 배운 내용을 GitHub에 책처럼 정리했습니다. 9월 초에는 KDT 해커톤 본선에 AI/LLM 개발 팀장으로 참여했고, 9월 7일 처음 나간 대회에서 장관상을 받았습니다.</p></div></article><article class="e low"><div class="dt">09-09 ~ 09-10</div><div class="tg"><span>바닥</span></div><div class="ct"><h3>상을 받고 이틀 뒤, 가장 오기 싫었던 날</h3><p>그런데 상을 받고 이틀 뒤가 더 힘들었습니다. 9월 9일에는 &quot;학원에 오기 싫었지만 포기하지 않고 왔다&quot;고 적었습니다. 9월 10일에는 오기 싫어서 상담을 받은 뒤에야 늦게 나왔습니다. 그날 아침 호흡 시간은 0.01분이었습니다. 저녁에 이렇게 남겼습니다. &quot;오늘 오기 싫었는데 와서 열심히 해서 고마워.&quot;</p></div></article><article class="e "><div class="dt">09-11 ~</div><div class="tg"><span>재시작</span></div><div class="ct"><h3>다시 일어난 날, 그리고 CTF의 시작</h3><p>다시 일어난 날은 9월 11일입니다. 그날 &quot;새로운 마음가짐으로 다시 더 열심히 하자는 마음을 먹고&quot; 등원했고, 복습과 과제를 이어갔습니다. 9월 15일부터는 수업과 과제에 더해 네트워크관리사와 리눅스마스터 이론 정리를 시작했습니다. 9월 17일에는 교보문고에서 자격증 책을 샀고, 같은 날 처음으로 CTF 문제를 풀었습니다. 다음 날에는 전날 어려웠던 문제를 구글링으로 끝까지 붙들었습니다. 9월 21일에는 발목을 삐었지만 자차로 등원했고, 추석 연휴에도 복습하고 CTF를 풀었습니다.</p></div></article><article class="e "><div class="dt">09-29</div><div class="tg"><span>현재</span></div><div class="ct"><h3>호흡 0.01분에서 5분으로, 30일 중 22일 실천</h3><p>9월 29일 아침 호흡은 5분이었습니다. 9월 10일의 0.01분에서 시작한 숫자입니다. 30일간의 기록 중 22일은 그날 정한 강점 행동을 실천했다고 적었습니다. 실천하지 못한 날도 6일 있었고, 저는 그 날도 지우지 않고 남겼습니다.</p></div></article><article class="e "><div class="dt">지금</div><div class="tg"><span>다음</span></div><div class="ct"><h3>화학공학에서 AI 보안으로</h3><p>지금 저는 화학공학에서 출발해 AI 보안으로 걸어가고 있습니다. 막히는 날은 앞으로도 올 것입니다. 그날에도 저는 자리로 돌아와 기록을 남기고, 다시 풀어볼 것입니다.</p></div></article></div>
+</div></section>
+
+<footer><div class="w mono"><span><b>정환주</b> · <a href="mailto:ghkswnwjd@gmail.com">ghkswnwjd@gmail.com</a></span><a href="https://github.com/coding-jhj">github.com/coding-jhj</a></div></footer>
+<script>
+document.getElementById("cp").addEventListener("click",function(){var b=this,m="ghkswnwjd@gmail.com";try{navigator.clipboard.writeText(m).then(function(){b.textContent="복사됨"},function(){location.href="mailto:"+m})}catch(e){location.href="mailto:"+m}});
+document.getElementById("tg").addEventListener("click",function(){var l=document.getElementById("lg"),closed=l.classList.toggle("closed");this.textContent=closed?"기록 자세히 펼치기":"기록 접기";this.setAttribute("aria-expanded",String(!closed))});
+</script>
+</body></html>
